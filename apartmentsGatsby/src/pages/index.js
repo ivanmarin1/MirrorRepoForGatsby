@@ -38,7 +38,7 @@ const IndexPage = ({ data }) => (
             />
           ))}
         </div> */}
-      <div style={{ width: "250px" }}>
+      <div style={{ width: "400px" }}>
         <Image filename="house-main.jpg" alt="gatsby icon"></Image>
       </div>
     </SplitScreen>

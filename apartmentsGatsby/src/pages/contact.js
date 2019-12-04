@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import SplitScreen from "../components/splitScreen"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -23,6 +22,9 @@ const ContactPage = () => (
         <Image filename="house-main" alt="Main house"></Image>
       </div>
     </SplitScreen>
+    <div>
+      <h2>Naša lokacija na karti:</h2>
+    </div>
   </Layout>
 )
 

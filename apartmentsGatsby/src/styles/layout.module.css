@@ -6,6 +6,7 @@ body {
 p {
   font: 17px play, sans-serif;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .mainContainer {
@@ -19,7 +20,15 @@ h1 {
 }
 h2 {
   letter-spacing: 1px;
+  color: black;
+  margin: "2%";
+  text-align: left;
+  font-family: Muli, sans-serif;
 }
 h3 {
   letter-spacing: 1px;
+  color: white;
+  margin: 0;
+  text-align: left;
+  font-family: Muli, sans-serif;
 }

@@ -4,7 +4,6 @@ import Header from "./header"
 import Footer from "./footer"
 import styles from "../styles/layout.module.css"
 import { StaticQuery, graphql } from "gatsby"
-import "../components/main.css"
 
 const menuItems = props => (
   <StaticQuery
