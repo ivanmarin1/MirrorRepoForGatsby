@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import TitleBar from "../components/titleBar"
-import styles from "../styles/index.module.css"
 import SplitScreen from "../components/splitScreen"
 
 const IndexPage = ({ data }) => (
