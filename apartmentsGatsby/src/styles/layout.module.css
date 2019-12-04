@@ -1,0 +1,25 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Muli, sans-serif";
+}
+p {
+  font: 17px play, sans-serif;
+  line-height: 1.6;
+}
+
+.mainContainer {
+  width: 70%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 2px;
+}
+h2 {
+  letter-spacing: 1px;
+}
+h3 {
+  letter-spacing: 1px;
+}

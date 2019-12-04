@@ -1,31 +1,18 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import TitleBar from "../components/titleBar"
 import Image from "../components/image"
+import SplitScreen from "../components/splitScreen"
 
 const SecondPage = () => (
   <Layout>
     <SEO title="About us" />
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        gridColumnGap: "2em",
-      }}
-    >
+    <SplitScreen>
       <div>
-        <div style={{ backgroundColor: "#7AAEEB", padding: "15px" }}>
-          <h3
-            style={{
-              color: "white",
-              margin: 0,
-              textAlign: "left",
-              fontFamily: "Muli, sans-serif",
-            }}
-          >
-            DOBRODOŠLI
-          </h3>
-        </div>
+        <TitleBar>
+          <h3>O NAMA</h3>
+        </TitleBar>
         <div>
           <p>
             Zaboravite svakodnevne brige i probleme, opustite se na balkonu ili
@@ -47,7 +34,7 @@ const SecondPage = () => (
       <div>
         <Image filename="baska-voda-plaza.jpg" alt="baska_plaza"></Image>
       </div>
-    </div>
+    </SplitScreen>
   </Layout>
 )
 

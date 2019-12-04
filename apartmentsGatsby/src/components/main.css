@@ -1,0 +1,23 @@
+.splitScreen {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 2em;
+}
+
+h3 {
+  color: white;
+  margin: 0;
+  text-align: left;
+  font-family: Muli, sans-serif;
+}
+
+.subtitleBar {
+  background-color: #7aaeeb;
+  padding: 15px;
+}
+
+.innerLayout {
+  width: 70%;
+  margin: 5% auto;
+  text-align: center;
+}

@@ -2,31 +2,18 @@ import React from "react"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import { graphql } from "gatsby"
+import TitleBar from "../components/titleBar"
+import styles from "../styles/index.module.css"
+import SplitScreen from "../components/splitScreen"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "auto auto",
-        gridColumnGap: "2em",
-      }}
-    >
+    <SplitScreen>
       <div>
-        <div style={{ backgroundColor: "#7AAEEB", padding: "15px" }}>
-          <h3
-            style={{
-              color: "white",
-              margin: 0,
-              textAlign: "left",
-              fontFamily: "Muli, sans-serif",
-            }}
-          >
-            DOBRODOŠLI
-          </h3>
-        </div>
+        <TitleBar>
+          <h3>DOBRODOŠLI</h3>
+        </TitleBar>
         <div>
           <p>
             Dobro došli u naše apartmane smještene u Baškoj Vodi, u podnožje
@@ -54,7 +41,7 @@ const IndexPage = ({ data }) => (
       <div style={{ width: "250px" }}>
         <Image filename="house-main.jpg" alt="gatsby icon"></Image>
       </div>
-    </div>
+    </SplitScreen>
   </Layout>
 )
 

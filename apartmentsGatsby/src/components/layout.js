@@ -2,8 +2,9 @@ import React from "react"
 import Navigation from "./navigation"
 import Header from "./header"
 import Footer from "./footer"
-import "./layout.css"
+import styles from "../styles/layout.module.css"
 import { StaticQuery, graphql } from "gatsby"
+import "../components/main.css"
 
 const menuItems = props => (
   <StaticQuery
@@ -22,12 +23,10 @@ const menuItems = props => (
       }
     `}
     render={data => (
-      <div className="layout">
+      <div className={styles.layout}>
         <Header></Header>
         <Navigation menuItems={data.site.siteMetadata.menuItems}></Navigation>
-        <div style={{ width: "70%", margin: "5% auto", textAlign: "center" }}>
-          {props.children}
-        </div>
+        <div className={styles.mainContainer}>{props.children}</div>
         <Footer></Footer>
       </div>
     )}

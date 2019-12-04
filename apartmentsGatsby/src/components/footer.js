@@ -1,18 +1,11 @@
 import React from "react"
+import styles from "../styles/footer.module.css"
 
 const Footer = () => {
   return (
-    <div style={{ backgroundColor: "rgb(63, 63, 63)", padding: "1%" }}>
-      <p
-        style={{
-          width: "40%",
-          margin: "0 auto",
-          textAlign: "center",
-        }}
-      >
-        Apartments Mirna
-      </p>
-    </div>
+    <footer>
+      <p className={styles.footerText}>Apartments Mirna</p>
+    </footer>
   )
 }
 
