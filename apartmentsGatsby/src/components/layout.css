@@ -1,0 +1,57 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Muli, sans-serif";
+}
+p {
+  font: 17px play, sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  letter-spacing: 2px;
+}
+
+h2 {
+  letter-spacing: 1px;
+}
+h3 {
+  letter-spacing: 1px;
+}
+link,
+link:active,
+link:focus {
+  outline: none;
+}
+hr {
+  height: 0.25rem;
+  width: 25%;
+  margin: 0;
+  background: #ffc59b;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.one.active ~ hr {
+  margin-left: 0%;
+}
+.two.active ~ hr {
+  margin-left: 25%;
+}
+.three.active ~ hr {
+  margin-left: 50%;
+}
+.four.active ~ hr {
+  margin-left: 75%;
+}
+.one:hover ~ hr {
+  margin-left: 0% !important;
+}
+.two:hover ~ hr {
+  margin-left: 25% !important;
+}
+.three:hover ~ hr {
+  margin-left: 50% !important;
+}
+.four:hover ~ hr {
+  margin-left: 75% !important;
+}
