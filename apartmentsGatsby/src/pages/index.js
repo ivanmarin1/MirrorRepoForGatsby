@@ -24,9 +24,6 @@ const IndexPage = ({ data }) => (
             Istražite naše apartmane i izaberite smještaj koji odgovara vašim
             potrebama.
           </p>
-          <p style={{ color: "#7AAEEB", fontSize: "20px", paddingTop: "2%" }}>
-            Radujemo se vašem dolasku i želimo vam ugodan odmor kod nas :)
-          </p>
         </div>
       </div>
       {/* <div style={{ width: "100px" }}>
@@ -38,10 +35,20 @@ const IndexPage = ({ data }) => (
             />
           ))}
         </div> */}
-      <div style={{ width: "400px" }}>
+      <div>
         <Image filename="house-main.jpg" alt="gatsby icon"></Image>
       </div>
     </SplitScreen>
+    <p
+      style={{
+        textAlign: "center",
+        color: "#7AAEEB",
+        fontSize: "20px",
+        paddingTop: "2%",
+      }}
+    >
+      Radujemo se vašem dolasku i želimo vam ugodan odmor kod nas :)
+    </p>
   </Layout>
 )
 
