@@ -20,9 +20,19 @@ module.exports = {
         number: "three",
       },
       {
+        text: "REZERVACIJE",
+        link: "/reservation/",
+        number: "four",
+      },
+      {
+        text: "RECENZIJE",
+        link: "/review/",
+        number: "five",
+      },
+      {
         text: "KONTAKT",
         link: "/contact/",
-        number: "four",
+        number: "six",
       },
     ],
   },
