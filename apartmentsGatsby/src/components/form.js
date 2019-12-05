@@ -17,7 +17,8 @@ const formikEnhancer = withFormik({
       .email("Invalid email address")
       .required("Email is required!"),
     personNum: Yup.number()
-      .min(1, "Sigurno vas mora biti vise od 0")
+      .min(1, "Sigurno vas je više od 0")
+      .max(20, "Nemamo gdje smjestiti toliko osoba :)")
       .required("Broj osoba je obavezan"),
     date: Yup.date().required("Datum je obavezan"),
     date2: Yup.date().required("Datum je obavezan"),
@@ -167,6 +168,7 @@ const MyForm = props => {
         onChange={handleChange}
         onBlur={handleBlur}
       />
+
       <TextInput
         id="comment"
         type="text"

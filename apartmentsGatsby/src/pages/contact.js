@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TitleBar from "../components/titleBar"
 import Image from "../components/image"
+import GoogleMaps from "../components/gMaps"
 
 const ContactPage = () => (
   <Layout>
@@ -24,6 +25,7 @@ const ContactPage = () => (
     </SplitScreen>
     <div>
       <h2>Naša lokacija na karti:</h2>
+      <GoogleMaps latitude="43.356959" longitude="16.952332"></GoogleMaps>
     </div>
   </Layout>
 )

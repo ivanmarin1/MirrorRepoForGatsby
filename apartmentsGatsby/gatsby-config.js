@@ -73,6 +73,13 @@ module.exports = {
         icon: `src/images/sun.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-source-googlemaps-geocoding",
+      options: {
+        key: "AIzaSyDloMSI7dwiI3TDEhjM5Lc37H9ydLFvohI",
+        address: "Put Kapelice 2",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
