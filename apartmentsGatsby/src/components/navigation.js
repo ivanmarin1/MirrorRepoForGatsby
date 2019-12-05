@@ -7,6 +7,7 @@ const Navigation = ({ menuItems }) => {
   const data = Array.from(menuItems)
   const menus = data.map(({ text, link, number }) => (
     <Link
+      key={number}
       activeClassName="active"
       className={`${number} ${styles.navButton}`}
       to={link}
