@@ -3,6 +3,7 @@ import TitleBar from "../components/titleBar"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from "../components/image"
+import Form from "../components/form"
 
 const ReservationPage = () => (
   <Layout>
