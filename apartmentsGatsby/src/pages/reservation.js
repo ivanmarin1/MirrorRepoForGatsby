@@ -7,11 +7,19 @@ import Form from "../components/form"
 
 const ReservationPage = () => (
   <Layout>
-    <SEO title="Reservation" />
-    <TitleBar>
-      <h3>REZERVACIJE</h3>
-    </TitleBar>
-    <Image filename="house-main" alt="Main house"></Image>
+    <div style={{ maxWidth: "700px", margin: "0 auto" }}>
+      <SEO title="Reservation" />
+      <TitleBar>
+        <h3>REZERVACIJE</h3>
+      </TitleBar>
+      <div>
+        <p>
+          Ukoliko želite provesti odmor kod nas, slobodno ispunite donji
+          formular te ćemo vam se mi javiti u najkraćem mogućem roku :)
+        </p>
+      </div>
+      <Form></Form>
+    </div>
   </Layout>
 )
 
