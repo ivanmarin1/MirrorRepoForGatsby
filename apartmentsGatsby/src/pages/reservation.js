@@ -17,7 +17,7 @@ const ReservationPage = () => (
           formular te ćemo vam se mi javiti u najkraćem mogućem roku :)
         </p>
       </div>
-      <Form></Form>
+      <Form id="root"></Form>
     </div>
   </Layout>
 )
