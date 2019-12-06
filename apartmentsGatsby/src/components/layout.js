@@ -1,5 +1,6 @@
 import React from "react"
 import Navigation from "./navigation"
+import NavigationMobile from "./navigationMobile"
 import Header from "./header"
 import Footer from "./footer"
 import styles from "../styles/layout.module.css"
@@ -25,6 +26,9 @@ const menuItems = props => (
       <div className={styles.layout}>
         <Header></Header>
         <Navigation menuItems={data.site.siteMetadata.menuItems}></Navigation>
+        <NavigationMobile
+          menuItems={data.site.siteMetadata.menuItems}
+        ></NavigationMobile>
         <div className={styles.mainContainer}>{props.children}</div>
         <Footer></Footer>
       </div>

@@ -17,7 +17,7 @@ const ContactPage = () => (
         <p>Ime prezime: Mirna Jurjević-Škopinić</p>
         <p> Email: mirna12345@gmail.com</p>
         <p>Broj mobitela: 099/198-0646</p>
-        <p> Adresa: Put kapelice 2, 21320 Baška Voda</p>
+        <p> Adresa: Baška 5, 21320 Baška Voda</p>
       </div>
       <div>
         <Image filename="house-main" alt="Main house"></Image>

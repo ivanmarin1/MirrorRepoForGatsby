@@ -17,6 +17,8 @@ const SecondPage = () => (
           <p>
             Zaboravite svakodnevne brige i probleme, opustite se na balkonu ili
             terasi i uživajte u prekrasnom pogledu na more i susjedni otok Brač.
+          </p>
+          <p>
             Kristalno čisto, azurno plavo more brzo će vas izmamiti iz ležaljke
             i za samo par koraka naći ćete se u beskrajnom prostranstvu
             plavetnila. Uz koncert cvrčaka, ispratite vaš sunčani dan ili
