@@ -78,6 +78,11 @@ code {
   margin: 0 auto;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 600px) {
+  .input-group {
+    width: 100%;
+  }
+}
 
 button {
   max-width: 150px;
