@@ -3,6 +3,7 @@ import Navigation from "./navigation"
 import NavigationMobile from "./navigationMobile"
 import Header from "./header"
 import Footer from "./footer"
+import Image from "./image"
 import styles from "../styles/layout.module.css"
 import { StaticQuery, graphql } from "gatsby"
 

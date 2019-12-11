@@ -14,7 +14,7 @@ const Navigation = ({ menuItems }) => {
       to={link}
     >
       <div className={styles.navIcon}>
-        <Image filename="index.png"></Image>
+        <Image filename={`${text}.png`}></Image>
       </div>
       {text}
     </Link>

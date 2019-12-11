@@ -4,10 +4,12 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import TitleBar from "../components/titleBar"
 import SplitScreen from "../components/splitScreen"
+import Slideshow from "../components/slideshow"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
+    {/* <Slideshow></Slideshow> */}
     <SplitScreen>
       <div>
         <TitleBar>

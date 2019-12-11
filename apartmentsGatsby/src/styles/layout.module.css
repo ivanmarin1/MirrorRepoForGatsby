@@ -2,7 +2,6 @@ body {
   margin: 0 auto;
   width: 100%;
   font-family: "Muli, sans-serif";
-  padding-bottom: 60px;
 }
 p {
   font: 17px play, sans-serif;
@@ -19,6 +18,9 @@ p {
 @media screen and (max-width: 600px) {
   .mainContainer {
     width: 85%;
+  }
+  body {
+    padding-bottom: 60px;
   }
 }
 
