@@ -12,7 +12,7 @@ const defaultProps = {
 
 const Marker = props => {
   return (
-    <div style={{ width: "50px" }}>
+    <div style={{ width: "50px", position: "absolute", top: "-50" }}>
       <Image filename="marker.png" alt="marker"></Image>
     </div>
   )
