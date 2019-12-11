@@ -14,7 +14,6 @@ export default function Template({
           <div
             style={{
               border: "1px solid #b2b5ae",
-              margin: "10% 0 10% 0",
               maxWidth: "900px",
               width: "70%",
               margin: "50px auto",
