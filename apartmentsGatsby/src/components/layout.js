@@ -18,6 +18,7 @@ const menuItems = props => (
               text
               link
               number
+              iconName
             }
           }
         }

@@ -6,7 +6,7 @@ import Image from "./image"
 
 const Navigation = ({ menuItems }) => {
   const data = Array.from(menuItems)
-  const menus = data.map(({ text, link, number }) => (
+  const menus = data.map(({ text, link, number, iconName }) => (
     <Link
       key={number}
       activeClassName="active"
@@ -14,7 +14,7 @@ const Navigation = ({ menuItems }) => {
       to={link}
     >
       <div className={styles.navIcon}>
-        <Image filename={`${text}.png`}></Image>
+        <Image filename={iconName}></Image>
       </div>
       {text}
     </Link>
