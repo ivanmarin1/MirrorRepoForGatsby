@@ -38,8 +38,12 @@ const ReviewPage = ({
 export default ReviewPage
 
 export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+  query($skip: Int, $limit: Int) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: $limit
+      skip: $skip
+    ) {
       edges {
         node {
           id
