@@ -6,15 +6,18 @@ import Form from "../components/formReview"
 import { graphql } from "gatsby"
 import PostLink from "../components/post-link"
 import styles from "../styles/layout.module.css"
+import Pagination from "../components/pagination"
 
 const ReviewPage = ({
   data: {
     allMarkdownRemark: { edges },
   },
+  pageContext,
 }) => {
   const Posts = edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+  console.log(pageContext.limit)
   return (
     <Layout>
       <div className={styles.mainContainer}>
@@ -28,6 +31,10 @@ const ReviewPage = ({
             možete ostaviti vaše osobno iskustvo.
           </p>
           {Posts}
+          <Pagination
+            pageCount={pageContext.numPages}
+            currentPage={pageContext.currentPage}
+          />
           <div>
             <h2>Vaše iskustvo:</h2>
             <Form id="root"></Form>
@@ -39,6 +46,26 @@ const ReviewPage = ({
 }
 
 export default ReviewPage
+
+// export const Pagination = ({ currentPage, pageCount, base }) => (
+//   <nav className="pagination">
+//     {currentPage > 1 ? (
+//       <Link title="Go to previous page" to={`/review/${currentPage - 1}`}>
+//         ← Newer posts
+//       </Link>
+//     ) : (
+//       <span />
+//     )}
+//     Page {currentPage} of {pageCount}
+//     {currentPage < pageCount ? (
+//       <Link title="Go to next page" to={`/review/${currentPage + 1}`}>
+//         Older posts →
+//       </Link>
+//     ) : (
+//       <span />
+//     )}
+//   </nav>
+// )
 
 export const pageQuery = graphql`
   query($skip: Int, $limit: Int) {
