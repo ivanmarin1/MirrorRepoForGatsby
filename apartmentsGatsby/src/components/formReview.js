@@ -1,4 +1,4 @@
-import "./formik-demo.css"
+import "../styles/formik-demo.css"
 import React from "react"
 import { withFormik } from "formik"
 import * as Yup from "yup"
