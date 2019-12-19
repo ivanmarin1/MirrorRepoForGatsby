@@ -47,26 +47,6 @@ const ReviewPage = ({
 
 export default ReviewPage
 
-// export const Pagination = ({ currentPage, pageCount, base }) => (
-//   <nav className="pagination">
-//     {currentPage > 1 ? (
-//       <Link title="Go to previous page" to={`/review/${currentPage - 1}`}>
-//         ← Newer posts
-//       </Link>
-//     ) : (
-//       <span />
-//     )}
-//     Page {currentPage} of {pageCount}
-//     {currentPage < pageCount ? (
-//       <Link title="Go to next page" to={`/review/${currentPage + 1}`}>
-//         Older posts →
-//       </Link>
-//     ) : (
-//       <span />
-//     )}
-//   </nav>
-// )
-
 export const pageQuery = graphql`
   query($skip: Int, $limit: Int) {
     allMarkdownRemark(
