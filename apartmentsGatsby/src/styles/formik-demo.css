@@ -144,3 +144,17 @@ button.outline {
 .shake {
   animation-name: shake;
 }
+::-webkit-input-placeholder {
+  font-family: sans-serif;
+}
+:-moz-placeholder {
+  /* older Firefox*/
+  font-family: sans-serif;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: sans-serif;
+}
+:-ms-input-placeholder {
+  font-family: sans-serif;
+}

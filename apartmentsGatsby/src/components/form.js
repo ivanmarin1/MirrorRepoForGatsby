@@ -1,4 +1,4 @@
-import "./formik-demo.css"
+import "../styles/formik-demo.css"
 import React from "react"
 import { withFormik } from "formik"
 import * as Yup from "yup"
@@ -80,6 +80,42 @@ const TextInput = ({
         onChange={onChange}
         {...props}
       />
+      <InputFeedback error={error} />
+    </div>
+  )
+}
+const TextArea = ({
+  type,
+  id,
+  label,
+  error,
+  value,
+  onChange,
+  className,
+  ...props
+}) => {
+  const classes = classnames(
+    "input-group",
+    {
+      "animated shake error": !!error,
+    },
+    className
+  )
+  return (
+    <div className={classes}>
+      <Label htmlFor={id} error={error}>
+        {label}
+      </Label>
+      <textarea
+        id={id}
+        className="text-input"
+        type={type}
+        value={value}
+        onChange={onChange}
+        cols="40"
+        rows="5"
+        {...props}
+      ></textarea>
       <InputFeedback error={error} />
     </div>
   )
@@ -169,7 +205,7 @@ const MyForm = props => {
         onBlur={handleBlur}
       />
 
-      <TextInput
+      <TextArea
         id="comment"
         type="text"
         label="Dodatni komentar"
