@@ -5,6 +5,7 @@ import Header from "./header"
 import Footer from "./footer"
 import styles from "../styles/layout.module.css"
 import { StaticQuery, graphql } from "gatsby"
+import Slideshow from "./carousel"
 
 const menuItems = props => (
   <StaticQuery
@@ -30,7 +31,7 @@ const menuItems = props => (
         <NavigationMobile
           menuItems={data.site.siteMetadata.menuItems}
         ></NavigationMobile>
-        <div className={styles.mainContainer}>{props.children}</div>
+        {props.children}
         <Footer></Footer>
       </div>
     )}
