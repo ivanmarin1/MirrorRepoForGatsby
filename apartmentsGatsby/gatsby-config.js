@@ -97,7 +97,7 @@ module.exports = {
     {
       resolve: "gatsby-source-googlemaps-geocoding",
       options: {
-        key: "AIzaSyDloMSI7dwiI3TDEhjM5Lc37H9ydLFvohI",
+        key: process.env.GATSBY_GMAPS_API,
         address: "Put Kapelice 2",
       },
     },
