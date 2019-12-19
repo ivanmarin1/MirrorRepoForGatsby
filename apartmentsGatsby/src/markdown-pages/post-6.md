@@ -6,3 +6,4 @@ author: "Rocky Balboa"
 ---
 
 Presuper je imati 6. recenziju na stranici.
+Kul.
