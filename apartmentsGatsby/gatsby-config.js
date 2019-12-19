@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         text: "RECENZIJE",
-        link: "/review/",
+        link: "/review/1",
         number: "five",
         iconName: "review.png",
       },
