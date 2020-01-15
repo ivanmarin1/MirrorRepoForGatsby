@@ -147,7 +147,7 @@ const MyForm = props => {
         id="comment"
         type="text"
         label="Dodatni komentar"
-        placeholder="Ukoliko imate još pitanja, slobodno pitajte :)"
+        placeholder="Slobodno podijelite vaše iskustvo :)"
         error={touched.comment && errors.comment}
         value={values.comment}
         onChange={handleChange}

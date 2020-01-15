@@ -2,11 +2,15 @@ import React from "react"
 import TitleBar from "../components/titleBar"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Form from "../components/formReview"
 import { graphql } from "gatsby"
 import PostLink from "../components/post-link"
 import styles from "../styles/layout.module.css"
 import Pagination from "../components/pagination"
+import Login from "../components/login"
+import Review from "../components/userReview"
+import PrivateRoute from "../components/privateRoute"
+import { Router } from "@reach/router"
+import App from "./app"
 
 const ReviewPage = ({
   data: {
@@ -35,10 +39,7 @@ const ReviewPage = ({
             pageCount={pageContext.numPages}
             currentPage={pageContext.currentPage}
           />
-          <div>
-            <h2>Vaše iskustvo:</h2>
-            <Form id="root"></Form>
-          </div>
+          <App></App>
         </div>
       </div>
     </Layout>
