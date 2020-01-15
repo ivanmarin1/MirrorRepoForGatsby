@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import { navigate } from "gatsby"
 import { handleLogin, isLoggedIn } from "../services/auth"
 import { render } from "react-dom"
@@ -19,7 +19,9 @@ class Login extends React.Component {
     event.preventDefault()
     handleLogin(this.state)
   }
-
+  ManualRefresh() {
+    window.location.reload()
+  }
   render() {
     return (
       <>
@@ -28,6 +30,7 @@ class Login extends React.Component {
           method="post"
           onSubmit={event => {
             this.handleSubmit(event)
+            window.location.reload()
           }}
         >
           <label>
