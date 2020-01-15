@@ -1,7 +1,6 @@
-import React, { Component } from "react"
+import React from "react"
 import { isLoggedIn } from "../services/auth"
 import Login from "./login"
-import { Location } from "@reach/router"
 
 const PrivateRoute = ({ component: Component, location, ...rest }) => {
   // console.log(location.pathname)

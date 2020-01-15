@@ -1,9 +1,10 @@
 import React from "react"
 import Form from "./formReview"
 
-const setUser = user =>
+const setUser = user => {
   window.localStorage.setItem("gatsbyUser", JSON.stringify(user))
-
+  window.location.reload()
+}
 const UserForm = props => {
   return (
     <div>
