@@ -5,9 +5,9 @@ import Form from "./formReview"
 import Login from "./login"
 
 const PrivateRoute = ({ component: Component, location, ...rest }) => {
-  console.log(window.location.pathname)
+  // console.log(window.location.pathname)
 
-  if (!isLoggedIn() && window.location.pathname !== `/app/login`) {
+  if (!isLoggedIn() && location.pathname !== `/app/login`) {
     return <Login></Login>
   }
   return <Component {...rest} />
