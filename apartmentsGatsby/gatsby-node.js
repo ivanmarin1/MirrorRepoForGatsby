@@ -35,7 +35,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
   // pagination
   const posts = result.data.allMarkdownRemark.edges
-  const postsPerPage = 3
+  const postsPerPage = 5
   const numPages = Math.ceil(posts.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
@@ -59,11 +59,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 }
 exports.onCreateNode = ({ page, node, actions, getNode }) => {
   const { createNodeField } = actions
-  // if (page.path.match(/^\/app/)) {
-  //   page.matchPath = "/app/*"
-  //   // Update the page.
-  //   createPage(page)
-  // }
+
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
     createNodeField({
