@@ -6,10 +6,6 @@ import { graphql } from "gatsby"
 import PostLink from "../components/post-link"
 import styles from "../styles/layout.module.css"
 import Pagination from "../components/pagination"
-import Login from "../components/login"
-import Review from "../components/userReview"
-import PrivateRoute from "../components/privateRoute"
-import { Router } from "@reach/router"
 import App from "./app"
 
 const ReviewPage = ({
