@@ -2,9 +2,7 @@ import React from "react"
 import TitleBar from "../components/titleBar"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Image from "../components/image"
 import styles from "../styles/layout.module.css"
-import { Grid } from "react-bootstrap"
 
 const ApartmentsPage = () => (
   <Layout>

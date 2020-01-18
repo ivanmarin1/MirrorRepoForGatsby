@@ -1,7 +1,5 @@
-import React, { Component } from "react"
-import { navigate } from "gatsby"
-import { handleLogin, isLoggedIn } from "../services/auth"
-import { render } from "react-dom"
+import React from "react"
+import { handleLogin } from "../services/auth"
 
 class Login extends React.Component {
   state = {
