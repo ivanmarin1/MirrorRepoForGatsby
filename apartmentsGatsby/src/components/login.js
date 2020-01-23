@@ -32,18 +32,31 @@ class Login extends React.Component {
           }}
         >
           <label>
-            Username
-            <input type="text" name="username" onChange={this.handleUpdate} />
+            <p style={{ display: "inline-block", padding: "20px" }}>Username</p>
+            <input
+              style={{ display: "inline-block" }}
+              type="text"
+              name="username"
+              onChange={this.handleUpdate}
+            />
           </label>
           <label>
-            Password
+            <p style={{ display: "inline-block", padding: "20px" }}>Password</p>
             <input
+              style={{ display: "inline-block" }}
               type="password"
               name="password"
               onChange={this.handleUpdate}
             />
           </label>
-          <input type="submit" value="Log In" />
+          <button
+            onClick={event => {
+              this.handleSubmit(event)
+              window.location.reload()
+            }}
+          >
+            Log In
+          </button>
         </form>
       </>
     )
