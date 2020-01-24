@@ -69,13 +69,7 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `backgrounds`,
-        path: `${__dirname}/src/images/Slides`, // wherever background images are stored
-      },
-    },
+
     {
       resolve: `gatsby-plugin-create-client-paths`,
       options: { prefixes: [`/app/*`] },
