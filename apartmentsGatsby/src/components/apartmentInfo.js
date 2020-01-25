@@ -102,6 +102,9 @@ const ApartmentInfo = ({ apartment }) => (
       // const img = data.collectionOneImages.edges.map(edge => (
       //   <Img fluid={edge.node.childImageSharp.fluid}></Img>
       // ))
+
+      //displaying correct apartment because apartment 1 !== apartment[0]
+
       const a1Img = data.collectionOneImages.edges
       const a2Img = data.collectionTwoImages.edges
       const a3Img = data.collectionThreeImages.edges
@@ -140,23 +143,8 @@ const ApartmentInfo = ({ apartment }) => (
               >
                 {apartment.frontmatter.title}
               </h3>
-              <div style={{ width: "500px" }}>
+              <div style={{ width: "500px", margin: "0 auto" }}>
                 <SlideSync apart={aImg}></SlideSync>
-                {/* <Slider>
-                  {a1Img.map(edge => (
-                    // <Img key={index} fluid={node.childImageSharp}></Img>
-                    <div>
-                      <Img fluid={edge.node.childImageSharp.fluid}></Img>
-                    </div>
-                  ))}
-                </Slider> */}
-
-                {/* {a1Img.map(edge => (
-                  // <Img key={index} fluid={node.childImageSharp}></Img>
-                  <div>
-                    <Img fluid={edge.node.childImageSharp.fluid}></Img>
-                  </div>
-                ))} */}
               </div>
               <div style={{ margin: "auto" }}>{apartment.excerpt}</div>
               <Link to="/reservation/">
@@ -171,61 +159,72 @@ const ApartmentInfo = ({ apartment }) => (
 )
 export default ApartmentInfo
 
-//query koji ce slike za sve apartmane unutar foldera
-//preko map funkcije pretvorit taj array u poziv za image componentu sa filenameon od objekta
+export class Slideshow extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      apart: this.props.data.collectionOneImages.edges,
+    }
+    var apart = this.props.data.collectionOneImages.edges
+    // in state we have stored the images as well as current index of image and translate value
+    if (this.props.apartment.frontmatter.title === "Apartment 1") {
+      this.setState = {
+        apart: this.props.data.collectionOneImages.edges,
+      }
+    }
+    if (this.props.apartment.frontmatter.title === "Apartment 2") {
+      this.setState = {
+        apart: this.props.data.collectionTwoImages.edges,
+      }
+    }
+    if (this.props.apartment.frontmatter.title === "Apartment 3") {
+      this.setState = {
+        apart: this.props.data.collectionThreeImages.edges,
+      }
+    }
+    if (this.props.apartment.frontmatter.title === "Apartment 4") {
+      this.setState = {
+        apart: this.props.data.collectionFourImages.edges,
+      }
+    }
+    if (this.props.apartment.frontmatter.title === "Apartment 5") {
+      this.setState = {
+        apart: this.props.data.collectionFiveImages.edges,
+      }
+    }
+  }
 
-// export const query = graphql`
-//   {
-//     collectionOneImages: allFile(
-//       filter: { relativeDirectory: { regex: "/Apartments/A1/" } }
-//     ) {
-//       edges {
-//         node {
-//           relativePath
-//           name
-//           dir
-//           relativeDirectory
-//           childImageSharp {
-//             fluid {
-//               ...GatsbyImageSharpFluid_tracedSVG
-//             }
-//           }
-//         }
-//       }
-//     }
-//     collectionTwoImages: allFile(
-//       filter: { relativeDirectory: { regex: "/Apartments/A2/" } }
-//     ) {
-//       edges {
-//         node {
-//           relativePath
-//           name
-//           dir
-//           relativeDirectory
-//           childImageSharp {
-//             fluid {
-//               ...GatsbyImageSharpFluid_tracedSVG
-//             }
-//           }
-//         }
-//       }
-//     }
-//     collectionThreeImages: allFile(
-//       filter: { relativeDirectory: { regex: "/Apartments/A3/" } }
-//     ) {
-//       edges {
-//         node {
-//           relativePath
-//           name
-//           dir
-//           relativeDirectory
-//           childImageSharp {
-//             fluid {
-//               ...GatsbyImageSharpFluid_tracedSVG
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
+  componentDidUpdate(prevProps) {
+    if (
+      this.props.apartment.frontmatter.title !==
+      prevProps.apartment.frontmatter.title
+    ) {
+      if (this.props.apartment.frontmatter.title === "Apartment 1") {
+        this.setState = {
+          apartm: this.props.data.collectionOneImages.edges,
+        }
+      }
+      if (this.props.apartment.frontmatter.title === "Apartment 2") {
+        this.setState(this.props.data.collectionTwoImages.edges)
+      }
+      if (this.props.apartment.frontmatter.title === "Apartment 3") {
+        this.setState = {
+          apartm: this.props.data.collectionThreeImages.edges,
+        }
+      }
+      if (this.props.apartment.frontmatter.title === "Apartment 4") {
+        this.setState = {
+          apartm: this.props.data.collectionFourImages.edges,
+        }
+      }
+      if (this.props.apartment.frontmatter.title === "Apartment 5") {
+        this.setState = {
+          apartm: this.props.data.collectionFiveImages.edges,
+        }
+      }
+    }
+  }
+  render() {
+    return <SlideSync apart={this.state.apart}></SlideSync>
+  }
+}

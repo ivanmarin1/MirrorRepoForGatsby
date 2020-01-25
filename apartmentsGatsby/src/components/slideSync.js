@@ -48,7 +48,8 @@ export default class AsNavFor extends Component {
           infinite={true}
           focusOnSelect={true}
           centerMode={true}
-          dots={true}
+          dots={false}
+          arrows={false}
         >
           {this.props.apart.map(edge => (
             // <Img key={index} fluid={node.childImageSharp}></Img>
