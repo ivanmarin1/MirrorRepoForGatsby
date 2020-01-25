@@ -70,11 +70,6 @@ export class Slideshow extends React.Component {
     this._onButtonClick = this._onButtonClick.bind(this)
   }
 
-  componentDidUpdate(prevProps) {
-    if (this.props.apartment !== prevProps.apartment) {
-    }
-  }
-
   _onButtonClick(value) {
     this.setState({
       ActiveApart: this.props.apartment[value],
