@@ -11,8 +11,6 @@ const ApartmentsPage = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  const Apartments = edges
-  var ActiveApart = Apartments[0]
   return (
     <Layout>
       <div className={styles.mainContainer}>
@@ -20,7 +18,7 @@ const ApartmentsPage = ({
         <TitleBar>
           <h3>APARTMANI</h3>
         </TitleBar>
-        <Slideshow apartment={Apartments}></Slideshow>
+        <Slideshow apartment={edges}></Slideshow>
       </div>
     </Layout>
   )
