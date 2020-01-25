@@ -99,11 +99,7 @@ const ApartmentInfo = ({ apartment }) => (
       }
     `}
     render={data => {
-      // const img = data.collectionOneImages.edges.map(edge => (
-      //   <Img fluid={edge.node.childImageSharp.fluid}></Img>
-      // ))
-
-      //displaying correct apartment because apartment 1 !== apartment[0]
+      //displaying correct apartment images because apartment 1 !== apartment[0]
 
       const a1Img = data.collectionOneImages.edges
       const a2Img = data.collectionTwoImages.edges
@@ -111,21 +107,13 @@ const ApartmentInfo = ({ apartment }) => (
       const a4Img = data.collectionFourImages.edges
       const a5Img = data.collectionFiveImages.edges
       var aImg = a1Img
+
       if (apartment.frontmatter.title === "Apartment 1") aImg = a1Img
       if (apartment.frontmatter.title === "Apartment 2") aImg = a2Img
       if (apartment.frontmatter.title === "Apartment 3") aImg = a3Img
       if (apartment.frontmatter.title === "Apartment 4") aImg = a4Img
       if (apartment.frontmatter.title === "Apartment 5") aImg = a5Img
-      var settings = {
-        dots: true,
-        infinite: true,
-        speed: 1000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        adaptiveHeight: true,
-      }
+
       return (
         <div>
           <div>
