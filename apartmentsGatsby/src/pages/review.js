@@ -50,6 +50,7 @@ export const pageQuery = graphql`
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: $limit
       skip: $skip
+      filter: { frontmatter: { category: { eq: "Posts" } } }
     ) {
       edges {
         node {
