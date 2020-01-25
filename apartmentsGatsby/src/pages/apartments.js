@@ -18,7 +18,7 @@ const ApartmentsPage = ({
         <TitleBar>
           <h3>APARTMANI</h3>
         </TitleBar>
-        <Slideshow apartment={edges}></Slideshow>
+        <Apartments apartment={edges}></Apartments>
       </div>
     </Layout>
   )
@@ -26,7 +26,7 @@ const ApartmentsPage = ({
 
 export default ApartmentsPage
 
-export class Slideshow extends React.Component {
+export class Apartments extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
