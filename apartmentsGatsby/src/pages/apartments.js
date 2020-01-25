@@ -21,39 +21,6 @@ const ApartmentsPage = ({
           <h3>APARTMANI</h3>
         </TitleBar>
         <Slideshow apartment={Apartments}></Slideshow>
-        {/* <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 3fr",
-            gridColumnGap: "20px",
-          }}
-        >
-          <div>
-            <ul>
-              <button onClick={() => (ActiveApart = Apartments[0])}>
-                Apartman 1
-              </button>
-              <button onClick={() => (ActiveApart = Apartments[1])}>
-                Apartman 2
-              </button>
-              <button onClick={() => (ActiveApart = Apartments[2])}>
-                Apartman 3
-              </button>
-              <button onClick={() => (ActiveApart = Apartments[3])}>
-                Apartman 4
-              </button>
-              <button onClick={() => (ActiveApart = Apartments[4])}>
-                Apartman 5
-              </button>
-            </ul>
-          </div>
-          <div style={{ margin: "20px 0 20px 0" }}>
-            <ApartmentInfo
-              key={ActiveApart.node.id}
-              apartment={ActiveApart.node}
-            ></ApartmentInfo>
-          </div>
-        </div> */}
       </div>
     </Layout>
   )
