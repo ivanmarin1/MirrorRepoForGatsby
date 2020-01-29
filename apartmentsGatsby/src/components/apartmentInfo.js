@@ -128,7 +128,10 @@ const ApartmentInfo = ({ apartment }) => (
           <div className={style.slideshow} style={{}}>
             <SlideSync apart={aImg}></SlideSync>
           </div>
-          <div className={style.description}>{apartment.excerpt}</div>
+          <div
+            className={style.description}
+            dangerouslySetInnerHTML={{ __html: apartment.html }}
+          ></div>
           <Link to="/reservation/">
             <button>REZERVIRAJ</button>
           </Link>

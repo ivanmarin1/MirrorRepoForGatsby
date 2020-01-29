@@ -104,6 +104,7 @@ export const query = graphql`
             title
             imagePath
           }
+          html
         }
       }
     }
