@@ -32,7 +32,9 @@ class Login extends React.Component {
           }}
         >
           <label>
-            <p style={{ display: "inline-block", padding: "20px" }}>Username</p>
+            <p style={{ display: "inline-block", paddingRight: "20px" }}>
+              Username
+            </p>
             <input
               style={{ display: "inline-block" }}
               type="text"
