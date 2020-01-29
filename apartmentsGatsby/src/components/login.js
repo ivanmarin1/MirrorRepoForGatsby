@@ -23,7 +23,7 @@ class Login extends React.Component {
   render() {
     return (
       <>
-        <h1>Log in</h1>
+        <h1 style={{ margin: "60px 0 0 0" }}>Log in</h1>
         <form
           method="post"
           onSubmit={event => {
@@ -54,6 +54,7 @@ class Login extends React.Component {
               this.handleSubmit(event)
               window.location.reload()
             }}
+            style={{ display: "block", margin: "0 auto" }}
           >
             Log In
           </button>
