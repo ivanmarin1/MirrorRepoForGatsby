@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styles from "../styles/layout.module.css"
 import ApartmentInfo from "../components/apartmentInfo"
+import style from "../styles/apartments.module.css"
 
 const ApartmentsPage = ({
   data: {
@@ -42,23 +43,42 @@ export class Apartments extends React.Component {
   }
   render() {
     return (
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 3fr",
-          gridColumnGap: "20px",
-        }}
-      >
+      <div className={style.apartments}>
         <div>
           <ul>
-            <button onClick={() => this._onButtonClick("0")}>Apartman 1</button>
-            <button onClick={() => this._onButtonClick("1")}>Apartman 2</button>
-            <button onClick={() => this._onButtonClick("2")}>Apartman 3</button>
-            <button onClick={() => this._onButtonClick("3")}>Apartman 4</button>
-            <button onClick={() => this._onButtonClick("4")}>Apartman 5</button>
+            <button
+              className={style.button}
+              onClick={() => this._onButtonClick("0")}
+            >
+              Apartman 1
+            </button>
+            <button
+              className={style.button}
+              onClick={() => this._onButtonClick("1")}
+            >
+              Apartman 2
+            </button>
+            <button
+              className={style.button}
+              onClick={() => this._onButtonClick("2")}
+            >
+              Apartman 3
+            </button>
+            <button
+              className={style.button}
+              onClick={() => this._onButtonClick("3")}
+            >
+              Apartman 4
+            </button>
+            <button
+              className={style.button}
+              onClick={() => this._onButtonClick("4")}
+            >
+              Apartman 5
+            </button>
           </ul>
         </div>
-        <div style={{ margin: "20px 0 20px 0" }}>
+        <div className={style.singleApart}>
           <ApartmentInfo
             key={this.state.ActiveApart.node.id}
             apartment={this.state.ActiveApart.node}

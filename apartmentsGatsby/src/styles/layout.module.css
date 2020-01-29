@@ -29,6 +29,15 @@ p {
   }
 }
 
+@media screen and (max-width: 350px) {
+  .mainContainer {
+    width: 100%;
+  }
+  body {
+    padding-bottom: 60px;
+  }
+}
+
 h1 {
   letter-spacing: 2px;
 }

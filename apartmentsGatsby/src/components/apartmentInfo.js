@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql, StaticQuery } from "gatsby"
 import SlideSync from "./slideSync"
+import style from "../styles/apartments.module.css"
 
 const ApartmentInfo = ({ apartment }) => (
   <StaticQuery
@@ -116,30 +117,21 @@ const ApartmentInfo = ({ apartment }) => (
 
       return (
         <div>
-          <div>
-            <div
-              style={{
-                padding: "15px",
-              }}
-            >
-              <h3
-                style={{
-                  color: "#7AAEEB",
-                  textAlign: "center",
-                  padding: "15px",
-                }}
-              >
-                {apartment.frontmatter.title}
-              </h3>
-              <div style={{ width: "500px", margin: "0 auto" }}>
-                <SlideSync apart={aImg}></SlideSync>
-              </div>
-              <div style={{ margin: "auto" }}>{apartment.excerpt}</div>
-              <Link to="/reservation/">
-                <button>REZERVIRAJ</button>
-              </Link>
-            </div>
+          <h2
+            style={{
+              color: "#7AAEEB",
+              textAlign: "center",
+            }}
+          >
+            {apartment.frontmatter.title}
+          </h2>
+          <div className={style.slideshow} style={{}}>
+            <SlideSync apart={aImg}></SlideSync>
           </div>
+          <div className={style.description}>{apartment.excerpt}</div>
+          <Link to="/reservation/">
+            <button>REZERVIRAJ</button>
+          </Link>
         </div>
       )
     }}
