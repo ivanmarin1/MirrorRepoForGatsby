@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import styles from "../styles/layout.module.css"
 import ApartmentInfo from "../components/apartmentInfo"
 import style from "../styles/apartments.module.css"
+import Search from "../components/searchContainer"
 
 const ApartmentsPage = ({
   data: {
@@ -20,6 +21,7 @@ const ApartmentsPage = ({
           <h3>APARTMANI</h3>
         </TitleBar>
         <Apartments apartment={edges}></Apartments>
+        <Search apartment={edges}></Search>
       </div>
     </Layout>
   )
