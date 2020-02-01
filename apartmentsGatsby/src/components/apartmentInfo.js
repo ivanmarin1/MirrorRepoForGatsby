@@ -125,7 +125,7 @@ const ApartmentInfo = ({ apartment }) => (
           >
             {apartment.frontmatter.title}
           </h2>
-          <div className={style.slideshow} style={{}}>
+          <div className={style.slideshow}>
             <SlideSync apart={aImg}></SlideSync>
           </div>
           <div

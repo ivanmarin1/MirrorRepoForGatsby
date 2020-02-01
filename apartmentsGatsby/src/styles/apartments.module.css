@@ -53,3 +53,11 @@ ul {
   text-align: justify;
   font-size: 10px;
 }
+
+.slider {
+  color: black;
+}
+
+.slider .slick-arrow.slick-prev {
+  color: black;
+}

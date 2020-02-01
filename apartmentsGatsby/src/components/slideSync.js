@@ -1,8 +1,9 @@
 import React, { Component } from "react"
 import Slider from "react-slick"
 import Img from "gatsby-image"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import style from "../styles/apartments.module.css"
+// import "slick-carousel/slick/slick.css"
+// import "slick-carousel/slick/slick-theme.css"
 
 export default class AsNavFor extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ export default class AsNavFor extends Component {
   }
   render() {
     return (
-      <div>
+      <div className={style.slider}>
         <Slider
           asNavFor={this.state.nav2}
           ref={slider => (this.slider1 = slider)}
@@ -33,7 +34,6 @@ export default class AsNavFor extends Component {
           adaptiveHeight={true}
         >
           {this.props.apart.map(edge => (
-            // <Img key={index} fluid={node.childImageSharp}></Img>
             <div>
               <Img fluid={edge.node.childImageSharp.fluid}></Img>
             </div>
@@ -52,7 +52,6 @@ export default class AsNavFor extends Component {
           arrows={false}
         >
           {this.props.apart.map(edge => (
-            // <Img key={index} fluid={node.childImageSharp}></Img>
             <div>
               <Img fluid={edge.node.childImageSharp.fluid}></Img>
             </div>
