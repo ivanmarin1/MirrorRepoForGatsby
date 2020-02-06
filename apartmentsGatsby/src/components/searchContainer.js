@@ -1,5 +1,7 @@
 import React from "react"
 import ApartmentInfo from "./apartmentInfo"
+import style from "../styles/apartments.module.css"
+import { Apartments } from "../pages/apartments"
 
 export default class App extends React.Component {
   constructor(props) {
@@ -16,7 +18,11 @@ export default class App extends React.Component {
       <div className="content">
         <div className="container">
           <section className="section">
-            <List items={this.state.list} delete={this.removeItem} />
+            <List
+              items={this.state.list}
+              delete={this.removeItem}
+              apartment={this.props.apartment}
+            />
           </section>
           <hr />
         </div>
@@ -103,6 +109,7 @@ class List extends React.Component {
             onChange={this.handleChange}
             placeholder="Search..."
           />
+          <Apartments apartment={this.props.apartment}></Apartments>
         </div>
       )
     }
