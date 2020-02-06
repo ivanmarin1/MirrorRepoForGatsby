@@ -36,7 +36,7 @@ class List extends React.Component {
 
   componentDidMount() {
     this.setState({
-      filtered: this.props.items,
+      filtered: [],
     })
   }
 
