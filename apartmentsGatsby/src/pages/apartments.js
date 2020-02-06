@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import TitleBar from "../components/titleBar"
 import Layout from "../components/layout"
@@ -20,8 +20,8 @@ const ApartmentsPage = ({
         <TitleBar>
           <h3>APARTMANI</h3>
         </TitleBar>
-        <Apartments apartment={edges}></Apartments>
         <Search apartment={edges}></Search>
+        {/* <Apartments apartment={edges}></Apartments> */}
       </div>
     </Layout>
   )
@@ -94,7 +94,7 @@ export class Apartments extends React.Component {
 export const query = graphql`
   {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { order: ASC, fields: [frontmatter___path] }
       filter: { frontmatter: { category: { eq: "Apartments" } } }
     ) {
       edges {
