@@ -14,7 +14,7 @@ const Carousel = () => (
           edges {
             node {
               childImageSharp {
-                fluid {
+                fluid(maxWidth: 3150) {
                   ...GatsbyImageSharpFluid
                 }
               }
