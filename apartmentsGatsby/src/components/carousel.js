@@ -37,7 +37,10 @@ const Carousel = () => (
       >
         {data.allFile.edges.map(edge => (
           <div>
-            <Img fluid={edge.node.childImageSharp.fluid}></Img>
+            <Img
+              className={styles.slideImages}
+              fluid={edge.node.childImageSharp.fluid}
+            ></Img>
           </div>
         ))}
       </Slider>

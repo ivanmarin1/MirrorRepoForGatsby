@@ -20,6 +20,10 @@ p {
   margin-bottom: 20px;
 }
 
+.slideImages {
+  max-height: 700px;
+}
+
 @media screen and (max-width: 600px) {
   .mainContainer {
     width: 85%;
