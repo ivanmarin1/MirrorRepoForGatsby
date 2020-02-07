@@ -93,7 +93,7 @@ class List extends React.Component {
             type="text"
             className={style.input}
             onChange={this.handleChange}
-            placeholder="Search..."
+            placeholder="Search apartments..."
           />
           {this.state.filtered.map(item => (
             <ApartmentInfo key={item.id} apartment={item}></ApartmentInfo>
@@ -107,7 +107,7 @@ class List extends React.Component {
             type="text"
             className={style.input}
             onChange={this.handleChange}
-            placeholder="Search..."
+            placeholder="Search apartments..."
           />
           <Apartments apartment={this.props.apartment}></Apartments>
         </div>
