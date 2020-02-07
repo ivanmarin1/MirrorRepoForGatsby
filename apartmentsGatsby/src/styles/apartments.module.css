@@ -2,17 +2,25 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 20px;
-  margin-top: 4%;
 }
 
 .button {
   font-size: 15px;
   width: 75%;
+  background-color: #7aaeeb;
+}
+
+.button:hover {
+  background-color: #2984f0;
+}
+
+.button.active {
+  background-color: #ffa361;
 }
 
 ul {
   padding: 0;
-  margin-top: 30%;
+  margin-top: 80px;
 }
 
 .singleApart {
@@ -20,7 +28,7 @@ ul {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .apartments {
     grid-template-columns: 100%;
     grid-column-gap: 0;
@@ -60,4 +68,12 @@ ul {
 
 .slider .slick-arrow.slick-prev {
   color: black;
+}
+
+.input {
+  margin: 20px 0 20px 0;
+  padding: 15px;
+  width: 300px;
+  border: 1px solid #bfbfbf;
+  border-radius: 30px;
 }
