@@ -1,5 +1,6 @@
 import React from "react"
 import { handleLogin } from "../services/auth"
+import style from "../styles/apartments.module.css"
 
 class Login extends React.Component {
   state = {
@@ -56,6 +57,7 @@ class Login extends React.Component {
               this.handleSubmit(event)
               window.location.reload()
             }}
+            className={style.button}
             style={{ display: "block", margin: "0 auto" }}
           >
             Log In
