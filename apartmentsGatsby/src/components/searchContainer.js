@@ -1,7 +1,7 @@
 import React from "react"
 import ApartmentInfo from "./apartmentInfo"
-import style from "../styles/apartments.module.css"
 import { Apartments } from "../pages/apartments"
+import style from "../styles/apartments.module.css"
 
 export default class App extends React.Component {
   constructor(props) {
@@ -91,7 +91,7 @@ class List extends React.Component {
         <div>
           <input
             type="text"
-            className="input"
+            className={style.input}
             onChange={this.handleChange}
             placeholder="Search..."
           />
@@ -105,7 +105,7 @@ class List extends React.Component {
         <div>
           <input
             type="text"
-            className="input"
+            className={style.input}
             onChange={this.handleChange}
             placeholder="Search..."
           />
