@@ -133,7 +133,7 @@ const ApartmentInfo = ({ apartment }) => (
             dangerouslySetInnerHTML={{ __html: apartment.html }}
           ></div>
           <Link to="/reservation/">
-            <button>REZERVIRAJ</button>
+            <button className={style.button}>REZERVIRAJ</button>
           </Link>
         </div>
       )
