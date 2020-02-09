@@ -2,8 +2,9 @@
 path: "/reviews/seven-review"
 date: "2019-12-25"
 title: "Review post"
-author: "Rocky Balboa"
+author: "Frank Ghosh"
 category: "Posts"
 ---
 
-Presuper je imati 7. recenziju na stranici.
+Vrlo lijepi apartmani. Super čisto. Dobra oprema, klima uređaj radi odlično. Dobar Wi-Fi je dostupan. Velika uvala. Vrlo mirna lokacija.
+Čisto opuštanje. Vrlo preporučljivo. Dobri domaćini.

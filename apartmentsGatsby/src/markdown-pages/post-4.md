@@ -6,4 +6,4 @@ author: "Rocky Balboa"
 category: "Posts"
 ---
 
-Presuper je imati 4. recenziju na stranici.
+Želio bih ponovno doći ove godine. Moj peti put, osjećam se vrlo ugodno ovdje, kao kod kuće. Vrlo lijepi i korisni domaćini. Također se razumije i govori njemački jezik. Vrlo preporučljivo

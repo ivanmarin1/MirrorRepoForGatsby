@@ -2,9 +2,8 @@
 path: "/reviews/six-review"
 date: "2019-12-23"
 title: "Review post"
-author: "Rocky Balboa"
+author: "Lopez Mason"
 category: "Posts"
 ---
 
-Presuper je imati 6. recenziju na stranici.
-Kul.
+Bili smo u ljeto 2017. u Baškoj Vodi. Vrhunska lokacija i apsolutno čist apartman. Izvrstan izravan pristup moru. Sve je fantastično!

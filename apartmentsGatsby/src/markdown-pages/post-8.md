@@ -2,8 +2,8 @@
 path: "/reviews/eight-review"
 date: "2019-12-29"
 title: "Review post"
-author: "Rocky Balboa"
+author: "Gordon Valance"
 category: "Posts"
 ---
 
-Presuper je imati 8. recenziju na stranici.
+Vrlo, vrlo lijepi stanodavci i odlični apartmani. Cijena / izvedba i čistoća su vrlo dobri, idealno za ljude koji žele svoj mir i žele uživati ​​u svom odmoru.
