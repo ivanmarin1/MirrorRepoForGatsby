@@ -6,46 +6,39 @@ import Footer from "./footer"
 import styles from "../styles/layout.module.css"
 import { StaticQuery, graphql } from "gatsby"
 
-const menuItems = props => (
-  <StaticQuery
-    query={graphql`
-      {
-        site {
-          siteMetadata {
-            title
-            menuItems {
-              text
-              link
-              number
-              iconName
+const Layout = props => {
+  const screenHeight = window.screen.availHeight
+  const style = { minHeight: screenHeight }
+  return (
+    <StaticQuery
+      query={graphql`
+        {
+          site {
+            siteMetadata {
+              title
+              menuItems {
+                text
+                link
+                number
+                iconName
+              }
             }
           }
         }
-      }
-    `}
-    render={data => (
-      <div className={styles.layout}>
-        <Header></Header>
-        <Navigation menuItems={data.site.siteMetadata.menuItems}></Navigation>
-        <NavigationMobile
-          menuItems={data.site.siteMetadata.menuItems}
-        ></NavigationMobile>
-        {props.children}
-        <Footer></Footer>
-      </div>
-    )}
-  ></StaticQuery>
-)
+      `}
+      render={data => (
+        <div style={style} className={styles.layout}>
+          <Header></Header>
+          <Navigation menuItems={data.site.siteMetadata.menuItems}></Navigation>
+          <NavigationMobile
+            menuItems={data.site.siteMetadata.menuItems}
+          ></NavigationMobile>
+          {props.children}
+          <Footer></Footer>
+        </div>
+      )}
+    ></StaticQuery>
+  )
+}
 
-// const Layout = props => {
-//   return (
-//     <div className="layout">
-//       <Header></Header>
-//       <Navigation menuItems={data.site.siteMetadata.menuItems}></Navigation>
-//       {props.children}
-//       <Footer></Footer>
-//     </div>
-//   )
-// }
-
-export default menuItems
+export default Layout
