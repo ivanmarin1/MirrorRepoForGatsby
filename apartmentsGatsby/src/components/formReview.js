@@ -8,10 +8,10 @@ const formikEnhancer = withFormik({
   validationSchema: Yup.object().shape({
     firstName: Yup.string()
       .strict(true)
-      .min(2, "C'mon, your name is longer than that")
+      .min(2, "Sigurno vam je ime dulje :)")
       .required("First name is required."),
     lastName: Yup.string()
-      .min(2, "C'mon, your name is longer than that")
+      .min(2, "Sigurno vam je ime dulje :)")
       .required("Last name is required."),
     comment: Yup.string(),
   }),
