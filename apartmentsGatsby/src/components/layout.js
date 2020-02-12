@@ -8,7 +8,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 const Layout = props => {
   const screenHeight = window.screen.availHeight
-  const style = { minHeight: screenHeight }
+  const style = { minHeight: screenHeight, position: "relative" }
   return (
     <StaticQuery
       query={graphql`
