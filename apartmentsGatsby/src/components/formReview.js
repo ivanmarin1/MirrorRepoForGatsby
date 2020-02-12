@@ -20,7 +20,7 @@ const formikEnhancer = withFormik({
     ...user,
   }),
   handleSubmit: (payload, { setSubmitting }) => {
-    alert(payload.email)
+    alert("Hvala vam na vašem iskustvu " + payload.firstName + " :)")
     setSubmitting(false)
   },
   displayName: "MyForm",
@@ -121,7 +121,11 @@ const MyForm = props => {
     isSubmitting,
   } = props
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      onSubmit={() => {
+        if (window.confirm("Are you sure you want to submit?")) handleSubmit()
+      }}
+    >
       <TextInput
         id="firstName"
         type="text"
@@ -157,7 +161,9 @@ const MyForm = props => {
       <button
         type="button"
         className="outline"
-        onClick={handleReset}
+        onClick={() => {
+          if (window.confirm("Are you sure you want to reset?")) handleReset()
+        }}
         disabled={!dirty || isSubmitting}
       >
         Reset
