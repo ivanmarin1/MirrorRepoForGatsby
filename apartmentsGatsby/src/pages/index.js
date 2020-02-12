@@ -8,7 +8,7 @@ import Slideshow from "../components/carousel"
 import styles from "../styles/layout.module.css"
 import apartStyle from "../styles/apartments.module.css"
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Slideshow></Slideshow>
@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => (
               Istražite naše apartmane i izaberite smještaj koji odgovara vašim
               potrebama.
             </p>
-            <p style={{ marginTop: "" }}>
+            <p>
               Ukoliko ste spremni rezervirati, slobodno ispunite našu formu te
               rezervirajte vaš odmor :)
             </p>
