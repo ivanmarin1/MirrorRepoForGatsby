@@ -77,11 +77,19 @@ ul {
 }
 
 .input {
+  position: relative;
   display: inline-block;
   margin: 20px 0 20px 0;
-  width: 275px;
+  width: 300px;
   border: 1px solid #bfbfbf;
   border-radius: 30px;
+}
+
+.input > div {
+  position: absolute;
+  top: 12px;
+  display: inline-block;
+  width: 20px;
 }
 
 .input > input {
