@@ -2,6 +2,7 @@ import React from "react"
 import ApartmentInfo from "./apartmentInfo"
 import { Apartments } from "../pages/apartments"
 import style from "../styles/apartments.module.css"
+import Image from "./image"
 
 export default class App extends React.Component {
   constructor(props) {
@@ -89,12 +90,16 @@ class List extends React.Component {
     if (this.state.filtered.length > 0) {
       return (
         <div>
-          <input
-            type="text"
-            className={style.input}
-            onChange={this.handleChange}
-            placeholder="Search apartments..."
-          />
+          <div className={style.input}>
+            {/* <div style={{ width: "30px", display: "inline-block", top: "50%" }}>
+              <Image filename="search_icon.png"></Image>
+            </div> */}
+            <input
+              type="text"
+              onChange={this.handleChange}
+              placeholder="Search apartments..."
+            />
+          </div>
           {this.state.filtered.map(item => (
             <ApartmentInfo key={item.id} apartment={item}></ApartmentInfo>
           ))}
@@ -103,12 +108,16 @@ class List extends React.Component {
     } else {
       return (
         <div>
-          <input
-            type="text"
-            className={style.input}
-            onChange={this.handleChange}
-            placeholder="Search apartments..."
-          />
+          <div className={style.input}>
+            {/* <div style={{ width: "30px", display: "inline-block", top: "50%" }}>
+              <Image filename="search_icon.png"></Image>
+            </div> */}
+            <input
+              type="text"
+              onChange={this.handleChange}
+              placeholder="Search apartments..."
+            />
+          </div>
           <Apartments apartment={this.props.apartment}></Apartments>
         </div>
       )
