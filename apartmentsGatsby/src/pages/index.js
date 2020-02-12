@@ -54,21 +54,3 @@ const IndexPage = () => (
 )
 
 export default IndexPage
-
-// export const query = graphql`
-//   query {
-//     allFile(filter: { absolutePath: { regex: "//images//" } }) {
-//       edges {
-//         node {
-//           id
-//           base
-//           childImageSharp {
-//             fluid {
-//               ...GatsbyImageSharpFluid_tracedSVG
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
