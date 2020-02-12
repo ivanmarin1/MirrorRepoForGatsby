@@ -29,8 +29,8 @@ const IndexPage = ({ data }) => (
               potrebama.
             </p>
             <p style={{ marginTop: "" }}>
-              Ukoliko ste spremni za rezervirati, slobodno ispunite našu formu
-              te rezervirajte vaš odmor :)
+              Ukoliko ste spremni rezervirati, slobodno ispunite našu formu te
+              rezervirajte vaš odmor :)
             </p>
             <button className={apartStyle.contrastButton}>REZERVIRAJ</button>
           </div>
