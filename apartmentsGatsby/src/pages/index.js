@@ -6,6 +6,7 @@ import TitleBar from "../components/titleBar"
 import SplitScreen from "../components/splitScreen"
 import Slideshow from "../components/carousel"
 import styles from "../styles/layout.module.css"
+import apartStyle from "../styles/apartments.module.css"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -21,23 +22,19 @@ const IndexPage = ({ data }) => (
             <p>
               Dobro došli u naše apartmane smještene u Baškoj Vodi, u podnožje
               veličanstvenoga masiva planine Biokovo, na zapadni dio Makarskoga
-              primorja, u Dalmaciju, na hrvatsku obalu Jadrana!{" "}
+              primorja, u Dalmaciju, na hrvatsku obalu Jadrana!
             </p>
             <p>
               Istražite naše apartmane i izaberite smještaj koji odgovara vašim
               potrebama.
             </p>
+            <p style={{ marginTop: "" }}>
+              Ukoliko ste spremni za rezervirati, slobodno ispunite našu formu
+              te rezervirajte vaš odmor :)
+            </p>
+            <button className={apartStyle.button}>REZERVIRAJ</button>
           </div>
         </div>
-        {/* <div style={{ width: "100px" }}>
-          {data.allFile.edges.map(({ node }) => (
-            <Img
-              key={node.id}
-              fluid={node.childImageSharp.fluid}
-              alt="Picture of the house"
-            />
-          ))}
-        </div> */}
         <div>
           <Image filename="house-main.jpg" alt="gatsby icon"></Image>
         </div>
