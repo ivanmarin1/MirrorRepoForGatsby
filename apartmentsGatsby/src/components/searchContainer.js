@@ -91,9 +91,9 @@ class List extends React.Component {
       return (
         <div>
           <div className={style.input}>
-            {/* <div style={{ width: "30px", display: "inline-block", top: "50%" }}>
+            <div>
               <Image filename="search_icon.png"></Image>
-            </div> */}
+            </div>
             <input
               type="text"
               onChange={this.handleChange}
@@ -109,9 +109,9 @@ class List extends React.Component {
       return (
         <div>
           <div className={style.input}>
-            {/* <div style={{ width: "30px", display: "inline-block", top: "50%" }}>
+            <div>
               <Image filename="search_icon.png"></Image>
-            </div> */}
+            </div>
             <input
               type="text"
               onChange={this.handleChange}
