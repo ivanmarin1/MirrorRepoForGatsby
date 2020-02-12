@@ -10,6 +10,12 @@
   background-color: #7aaeeb;
 }
 
+.contrastButton {
+  font-size: 15px;
+  width: 75%;
+  background-color: #ffa361;
+}
+
 .button:hover {
   background-color: #2984f0;
 }

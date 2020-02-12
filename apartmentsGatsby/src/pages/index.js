@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => (
               Ukoliko ste spremni za rezervirati, slobodno ispunite našu formu
               te rezervirajte vaš odmor :)
             </p>
-            <button className={apartStyle.button}>REZERVIRAJ</button>
+            <button className={apartStyle.contrastButton}>REZERVIRAJ</button>
           </div>
         </div>
         <div>
