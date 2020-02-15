@@ -47,15 +47,6 @@ ul {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .button {
-    font-size: 13px;
-  }
-  .slideshow {
-    width: 100%;
-  }
-}
-
 .slideshow {
   max-width: 500px;
   width: 100%;
@@ -80,9 +71,11 @@ ul {
   position: relative;
   display: inline-block;
   margin: 20px 0 20px 0;
-  width: 300px;
+  width: 500px;
   border: 1px solid #bfbfbf;
   border-radius: 30px;
+  text-align: left;
+  padding-left: 30px;
 }
 
 .input > div {
@@ -95,4 +88,31 @@ ul {
 .input > input {
   border: none;
   padding: 15px 45px;
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    font-size: 13px;
+  }
+  .slideshow {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .input {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0 20px 0;
+    width: 80%;
+    border: 1px solid #bfbfbf;
+    border-radius: 30px;
+    text-align: left;
+    padding-left: 5%;
+  }
+  .input > input {
+    border: none;
+    padding: 15px 12%;
+    margin-left: 5px;
+  }
 }
