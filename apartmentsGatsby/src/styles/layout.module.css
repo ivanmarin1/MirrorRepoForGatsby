@@ -2,8 +2,11 @@ body {
   margin: 0 auto;
   width: 100%;
   font-family: "Muli, sans-serif";
+  color: #494949;
 }
+
 p {
+  color: #494949;
   font: 17px play, sans-serif;
   line-height: 1.6;
   text-align: justify;
