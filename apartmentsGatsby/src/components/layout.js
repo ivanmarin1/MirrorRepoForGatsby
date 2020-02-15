@@ -7,7 +7,8 @@ import styles from "../styles/layout.module.css"
 import { StaticQuery, graphql } from "gatsby"
 
 const Layout = props => {
-  const screenHeight = window.screen.availHeight()
+  const screenHeight =
+    typeof window !== "undefined" && window.screen.availHeight
   const style = { minHeight: screenHeight, position: "relative" }
   return (
     <StaticQuery
