@@ -33,26 +33,40 @@ class Login extends React.Component {
             window.location.reload()
           }}
         >
-          <label>
-            <p style={{ display: "inline-block", paddingRight: "20px" }}>
-              Korisničko ime
-            </p>
-            <input
-              style={{ display: "inline-block" }}
-              type="text"
-              name="username"
-              onChange={this.handleUpdate}
-            />
-          </label>
-          <label>
-            <p style={{ display: "inline-block", padding: "20px" }}>Lozinka</p>
-            <input
-              style={{ display: "inline-block" }}
-              type="password"
-              name="password"
-              onChange={this.handleUpdate}
-            />
-          </label>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+              gridColumnGap: "2em",
+            }}
+          >
+            <label>
+              <p
+                style={{ display: "inline-block", padding: "15px 20px 0 20px" }}
+              >
+                Korisničko ime
+              </p>
+              <input
+                style={{ display: "inline-block" }}
+                type="text"
+                name="username"
+                onChange={this.handleUpdate}
+              />
+            </label>
+            <label>
+              <p
+                style={{ display: "inline-block", padding: "0 20px 15px 20px" }}
+              >
+                Lozinka
+              </p>
+              <input
+                style={{ display: "inline-block" }}
+                type="password"
+                name="password"
+                onChange={this.handleUpdate}
+              />
+            </label>
+          </div>
           <button
             onClick={event => {
               this.handleSubmit(event)
