@@ -7,6 +7,7 @@ import SplitScreen from "../components/splitScreen"
 import Slideshow from "../components/carousel"
 import styles from "../styles/layout.module.css"
 import apartStyle from "../styles/apartments.module.css"
+import { Link } from "gatsby"
 
 const IndexPage = () => (
   <Layout>
@@ -32,11 +33,13 @@ const IndexPage = () => (
               Ukoliko ste spremni rezervirati, slobodno ispunite našu formu te
               rezervirajte vaš odmor :)
             </p>
-            <button className={apartStyle.contrastButton}>REZERVIRAJ</button>
+            <Link to="/reservation/">
+              <button className={apartStyle.contrastButton}>REZERVIRAJ</button>
+            </Link>
           </div>
         </div>
         <div>
-          <Image filename="house-main.jpg" alt="gatsby icon"></Image>
+          <Image filename="house-main.jpg"></Image>
         </div>
       </SplitScreen>
       <p
