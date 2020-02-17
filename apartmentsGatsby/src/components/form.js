@@ -143,7 +143,7 @@ const MyForm = props => {
         id="firstName"
         type="text"
         label="Ime"
-        placeholder="John"
+        placeholder="Ivan"
         error={touched.firstName && errors.firstName}
         value={values.firstName}
         onChange={handleChange}
@@ -153,7 +153,7 @@ const MyForm = props => {
         id="lastName"
         type="text"
         label="Prezime"
-        placeholder="Doe"
+        placeholder="Ivić"
         error={touched.lastName && errors.lastName}
         value={values.lastName}
         onChange={handleChange}
@@ -163,7 +163,7 @@ const MyForm = props => {
         id="email"
         type="email"
         label="Email"
-        placeholder="Enter your email"
+        placeholder="Unesite vašu email adresu"
         error={touched.email && errors.email}
         value={values.email}
         onChange={handleChange}
@@ -230,10 +230,10 @@ const MyForm = props => {
         }}
         disabled={!dirty || isSubmitting}
       >
-        Reset
+        Poništi
       </button>
       <button type="submit" disabled={isSubmitting}>
-        Submit
+        Pošalji
       </button>
       {/* <DisplayFormikState {...props} /> */}
     </form>
@@ -244,7 +244,18 @@ const MyEnhancedForm = formikEnhancer(MyForm)
 
 const App = () => (
   <div className="app">
-    <MyEnhancedForm user={{ email: "", firstName: "", lastName: "" }} />
+    <MyEnhancedForm
+      user={{
+        email: "",
+        firstName: "",
+        lastName: "",
+        personNum: "",
+        date: "",
+        date2: "",
+        apartmentNum: "",
+        comment: "",
+      }}
+    />
   </div>
 )
 
