@@ -9,13 +9,13 @@ const formikEnhancer = withFormik({
     firstName: Yup.string()
       .strict(true)
       .min(2, "Sigurno vam je ime dulje :)")
-      .required("First name is required."),
+      .required("Ime je obavezno."),
     lastName: Yup.string()
       .min(2, "Sigurno vam je ime dulje :)")
-      .required("Last name is required."),
+      .required("Prezime je obavezno."),
     email: Yup.string()
       .email("Neispravna email adresa")
-      .required("Email is required!"),
+      .required("Email je obavezan!"),
     personNum: Yup.number()
       .min(1, "Sigurno vas je više od 0")
       .max(20, "Nemamo gdje smjestiti toliko osoba :)")
@@ -135,7 +135,8 @@ const MyForm = props => {
   return (
     <form
       onSubmit={() => {
-        if (window.confirm("Are you sure you want to submit?")) handleSubmit()
+        if (window.confirm("Jeste li sigurni da želite poslati zahtjev?"))
+          handleSubmit()
       }}
     >
       <TextInput
@@ -224,7 +225,8 @@ const MyForm = props => {
         type="button"
         className="outline"
         onClick={() => {
-          if (window.confirm("Are you sure you want to reset?")) handleReset()
+          if (window.confirm("Jeste li sigurni da želite poništiti unos?"))
+            handleReset()
         }}
         disabled={!dirty || isSubmitting}
       >

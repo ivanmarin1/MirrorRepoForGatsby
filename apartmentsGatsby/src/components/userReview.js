@@ -14,7 +14,8 @@ const UserForm = props => {
       <button
         className={style.button}
         onClick={() => {
-          if (window.confirm("Are you sure you want to log out?")) setUser({})
+          if (window.confirm("Jeste li sigurni da se želite odjaviti?"))
+            setUser({})
         }}
       >
         ODJAVA
