@@ -8,16 +8,23 @@
   font-size: 15px;
   width: 75%;
   background-color: #7aaeeb;
+  transition: transform 0.2s;
 }
 
 .contrastButton {
   font-size: 15px;
   width: 75%;
   background-color: #ffa361;
+  transition: transform 0.2s;
 }
 
 .button:hover {
   background-color: #2984f0;
+  transform: scale(1.2);
+}
+
+.contrastButton:hover {
+  transform: scale(1.2);
 }
 
 .button.active {
