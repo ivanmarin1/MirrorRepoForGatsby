@@ -7,7 +7,7 @@ const Pagination = ({ currentPage, pageCount }) => {
     <nav className={styles.pagination}>
       {currentPage > 1 ? (
         <Link
-          title="Go to previous page"
+          title="Prethodna stranica"
           to={`/review/${currentPage - 1}`}
           className={styles.arrow}
         >
@@ -16,10 +16,10 @@ const Pagination = ({ currentPage, pageCount }) => {
       ) : (
         <span />
       )}
-      Page {currentPage} of {pageCount}
+      Stranica {currentPage} od {pageCount}
       {currentPage < pageCount ? (
         <Link
-          title="Go to next page"
+          title="Sljedeća stranica"
           to={`/review/${currentPage + 1}`}
           className={styles.arrow}
         >

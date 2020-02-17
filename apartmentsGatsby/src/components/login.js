@@ -24,8 +24,9 @@ class Login extends React.Component {
   render() {
     return (
       <>
-        <h1 style={{ margin: "60px 0 0 0" }}>Log in</h1>
+        <h1 style={{ margin: "60px 0 0 0" }}>Prijava</h1>
         <form
+          style={{ marginBottom: "20px" }}
           method="post"
           onSubmit={event => {
             this.handleSubmit(event)
@@ -34,7 +35,7 @@ class Login extends React.Component {
         >
           <label>
             <p style={{ display: "inline-block", paddingRight: "20px" }}>
-              Username
+              Korisničko ime
             </p>
             <input
               style={{ display: "inline-block" }}
@@ -44,7 +45,7 @@ class Login extends React.Component {
             />
           </label>
           <label>
-            <p style={{ display: "inline-block", padding: "20px" }}>Password</p>
+            <p style={{ display: "inline-block", padding: "20px" }}>Lozinka</p>
             <input
               style={{ display: "inline-block" }}
               type="password"
@@ -60,7 +61,7 @@ class Login extends React.Component {
             className={style.button}
             style={{ display: "block", margin: "0 auto" }}
           >
-            Log In
+            Prijava
           </button>
         </form>
       </>
