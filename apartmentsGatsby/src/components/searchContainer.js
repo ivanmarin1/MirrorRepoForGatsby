@@ -97,7 +97,7 @@ class List extends React.Component {
             <input
               type="text"
               onChange={this.handleChange}
-              placeholder="Search apartments..."
+              placeholder="Pretražite apartmane..."
             />
           </div>
           {this.state.filtered.map(item => (
@@ -115,7 +115,7 @@ class List extends React.Component {
             <input
               type="text"
               onChange={this.handleChange}
-              placeholder="Search apartments..."
+              placeholder="Pretražite apartmane..."
             />
           </div>
           <Apartments apartment={this.props.apartment}></Apartments>
