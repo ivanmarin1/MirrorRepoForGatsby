@@ -25,7 +25,7 @@ const ContactPage = () => (
           <Image filename="house-main" alt="Main house"></Image>
         </div>
       </SplitScreen>
-      <div>
+      <div style={{ marginBottom: "20px" }}>
         <h2>Naša lokacija na karti:</h2>
         <GoogleMaps latitude="43.356959" longitude="16.952332"></GoogleMaps>
       </div>
