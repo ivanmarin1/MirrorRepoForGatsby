@@ -1,7 +1,11 @@
 .link {
   text-decoration: none;
-  margin: 15px;
-  color: black;
+}
+
+.wrapper {
+  text-decoration: none;
+  margin: 25px 5px;
+  border-bottom: 1px solid grey;
 }
 
 .auth > h3 {
